@@ -28,14 +28,17 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-const Contact = styled(NavLink)`
+const ContactDiv = styled.div`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
+cursor: pointer;
 `
+
+
 const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
@@ -145,7 +148,11 @@ const Main = () => {
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:post@jornlarsen.no"}}>
+            <ContactDiv
+            onClick={() => {
+                window.location = "mailto:post@jornlarsen.no"
+            }}>
+            
                 <motion.h2
                 initial={{
                     y:-200,
@@ -161,7 +168,7 @@ const Main = () => {
                 >
                     Say hi..
                 </motion.h2>
-            </Contact>
+            </ContactDiv>
             <BLOG to="/blog">
                 <motion.h2
                 initial={{
