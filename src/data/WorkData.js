@@ -31,13 +31,13 @@ export const Work = [
   },
   {
     id: 4,
-    name: "Webiste Mockup",
+    name: "Arbeidskraft Valdres",
     description:
-      "A cool looking mockup website built with React.js, SASS and styled components.",
-    tags: ["react", "styledComponents", "react-router"],
+      "Website built for a Norwegian work-for-hire company based in Valdres.",
+    tags: ["react", "styledComponents", "react-router", "wordpress"],
 
-    demo: "https://fantastic-fairy-40f13c.netlify.app/",
-    github: "https://github.com/jorlar/website_fake",
+    demo: "https://www.arbeidskraftvaldres.no/",
+    github: "#",
   },
   {
     id: 5,
