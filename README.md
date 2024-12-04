@@ -1,43 +1,4 @@
-# Build a Stunning Portfolio with React JS using Styled-Components and framer-motion for awesome Animations
-
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/react-portfolio-final?style=social&logo=ApacheSpark&label=Stars&maxAge=2592000)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/react-portfolio-final?style=social&logo=KashFlow)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow&maxAge=2592000)&nbsp;&nbsp;<br />
-
-This repository contains Final code for The Portfolio Website in ReactJS. <br />
-
-View Demo👇: <br />
-https://react-portfolio-sigma.vercel.app/ <br />
-
-If you want to learn how to create it please follow below tutorial👇: <br /><br />
-https://youtu.be/jcohAIaSy2M <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/jcohAIaSy2M?style=social)](https://youtu.be/jcohAIaSy2M)<br />
-
-⚠⚠⚠ If you want full code of this website then you can get it from here👇: <br />
-
-https://codebucks.gumroad.com/l/hsTPD <br />
-
-You'll get code files which contans code for responsive portfolio website with
-all the animations showed in the demo.
-Also, I have used React Lazy loading to increase loading speed.
-
-I have recently updated all the required dependencies for React Portfolio Website.
-You might see some differences in implementation such as,
-
-=> In implementing react-router
-
-=> I have removed react-particles-js since it has been deprecated and used react-tsparticles instead, you can see it's implementation in ParticlesComponent.js file.
-
-=> In the index.js file we are no longer using ReactDOM since we can use createRoot in React 18.
-
-### Images of The Portfolio Website:
-
-![HOME](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Home.png)
-![Intro](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Intro.png)
-![Blog](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Blog.png)
-![Home Mobile](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Home-Mobile.png)
-![Intro Mobile](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Intro-Mobile.png)
-![Intro Blog](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Blog-Mobile.png)
+# Personal Portfolio with React JS using Styled-Components and framer-motion for awesome Animations
 
 ### Resources Used in This Project
 
@@ -85,33 +46,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
