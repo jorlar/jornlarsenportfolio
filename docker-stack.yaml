@@ -8,11 +8,11 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.web.entrypoints=http"
-      - "traefik.http.routers.web.rule=Host(`jorn-cv.jotun-utvikling.no`)"
+      - "traefik.http.routers.web.rule=Host(`jornlarsen.no`)"
       - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
       - "traefik.http.routers.web.middlewares=redirect-to-https"
       - "traefik.http.routers.web.entrypoints=https"
-      - "traefik.http.routers.web.rule=Host(`jorn-cv.jotun-utvikling.no`)"
+      - "traefik.http.routers.web.rule=Host(`jornlarsen.no`)"
       - "traefik.http.routers.web.tls=true"
       - "traefik.http.routers.web.tls.certresolver=cloudflare"
     deploy:
