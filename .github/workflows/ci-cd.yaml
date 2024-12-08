@@ -1,0 +1,53 @@
+name: ci-cd-jornlarsenc
+on: 
+  push:
+    branches:
+    - "master"
+jobs:
+    
+  docker:
+    runs-on: ubuntu-latest # Wee need ti
+    steps:
+      - name: Checkout github code=)
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: | 
+            jorlar88/jornlarsen:latest
+            jorlar88/jornlarsen:${{ github.sha }}
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - docker
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: create env file
+      run: |
+        echo "GIT_COMMIT_HASH=${{ github.sha }}" >> ./envfile
+
+    - name: Docker Stack Deploy
+      uses: cssnr/stack-deploy-action@v1
+      with:
+        name: jotun-prod-vps
+        file: docker-stack.yaml
+        host: jotunutvikling.dev 
+        user: jorlar
+        ssh_key: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+        env_file: ./envfile
