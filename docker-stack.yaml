@@ -1,23 +1,42 @@
 services:
-  web:
-    image: jorlar88/jornlarsen:${GIT_COMMIT_HASH:-latest} #use for live build -> docker io
+  cvjorn:
+    image: jorlar88/jornlarsen
     networks:
       - proxy
     ports:
-      - "3000:3000"
+      - "5173:3000"
+    environment:
+        - PORT=3000
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.web.entrypoints=http"
-      - "traefik.http.routers.web.rule=Host(`cvjorn.jotunutvikling.dev`)"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.web.middlewares=redirect-to-https"
-      - "traefik.http.routers.web.entrypoints=https"
-      - "traefik.http.routers.web.rule=Host(`cvjorn.jotunutvikling.dev`)"
-      - "traefik.http.routers.web.tls=true"
-      - "traefik.http.routers.web.tls.certresolver=cloudflare"
-    deploy:
-      update_config:
-        order: start-first
+        - "traefik.enable=true"
+        - "traefik.http.routers.cvjorn.entrypoints=http"
+        - "traefik.http.routers.cvjorn.rule=Host(cvjorn.jotunutvikling.dev)"
+        - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+        - "traefik.http.routers.cvjorn.middlewares=redirect-to-https"
+        - "traefik.http.routers.cvjorn-secure.entrypoints=https"
+        - "traefik.http.routers.cvjorn-secure.rule=Host(cvjorn.jotunutvikling.dev)"
+        - "traefik.http.routers.cvjorn-secure.tls=true"
+        - "traefik.http.routers.cvjorn-secure.tls.certresolver=cloudflare"
+        - "traefik.http.services.cvjorn.loadbalancer.server.port=5173"
+  jotun-web:
+    image: jorlar88/jotunarm
+    networks:
+      - proxy
+    ports:
+      - "5172:5173"
+    environment:
+        - PORT=5173
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.jotun-web.entrypoints=http"
+        - "traefik.http.routers.jotun-web.rule=Host(cvjorn.jotunutvikling.dev)"
+        - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+        - "traefik.http.routers.jotun-web.middlewares=redirect-to-https"
+        - "traefik.http.routers.jotun-web-secure.entrypoints=https"
+        - "traefik.http.routers.jotun-web-secure.rule=Host(cvjorn.jotunutvikling.dev)"
+        - "traefik.http.routers.jotun-web-secure.tls=true"
+        - "traefik.http.routers.jotun-web-secure.tls.certresolver=cloudflare"
+        - "traefik.http.services.jotun-web.loadbalancer.server.port=5173"
 networks:
   proxy:
     external: true

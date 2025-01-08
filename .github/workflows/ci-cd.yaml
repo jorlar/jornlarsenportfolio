@@ -1,4 +1,4 @@
-name: ci-cd-jornlarsenc
+name: ci-cd-jornlarsen
 on: 
   push:
     branches:
