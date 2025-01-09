@@ -78,7 +78,7 @@ const AboutPage = () => {
           på bordet.
           <br />
           <br />
-          Ta kontakt enten via linken for forsiden eller via SoMe-linken til
+          Ta kontakt enten via linken på forsiden eller via SoMe-linken til
           venstre
         </Main>
 
