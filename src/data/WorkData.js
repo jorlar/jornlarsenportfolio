@@ -41,7 +41,7 @@ export const Work = [
   },
   {
     id: 5,
-    name: "Jotun Utvikling AS",
+    name: "Tvela AS",
     description: "Website built for a norwegian development company",
     tags: ["react", "redux", "framer-motion", "sass"],
 
@@ -50,11 +50,10 @@ export const Work = [
   },
   {
     id: 6,
-    name: "NextJS Static Blog",
-    description: "Static Blogpage built using NextJS ",
-    tags: ["NextJS", "Typescript", "react", "sass"],
-
-    demo: "https://next-js-blog-phi-beige.vercel.app/",
-    github: "https://github.com/jorlar/next-js-blog",
+    name: "Satch Hundesalong",
+    description: "Webpage built for a dogstore in Norway",
+    tags: ["NextJS", "Typescript", "react", "sass", "Sanity"],
+    demo: "https://www.valdreshundesalong.no",
+    github: "https://github.com/Jotun-Utvikling-AS/satch2",
   },
 ];
