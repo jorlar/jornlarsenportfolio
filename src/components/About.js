@@ -6,7 +6,7 @@ const About = () => {
     { number: '300+', label: 'Fornøyde Kunder' },
     { number: '1000+', label: 'Leverte Bilder' },
     { number: '20+', label: 'Års Erfaring' },
-    { number: '500+', label: 'Eventer Dekket' }
+    { number: '50+', label: 'Eventer Dekket' }
   ];
 
   return (
