@@ -19,7 +19,7 @@ const Services = () => {
       icon: '📸',
       title: 'Livsstilsfotografering',
       description: 'Naturlige, skjult-kamera bilder som viser livet ditt, personlighet, og autentiske øyeblikk.',
-      features: ['Skjult-kamera Bilder', 'Naturlig Belysning', 'Historietelling', 'Social Media Ready']
+      features: ['Skjult-kamera Bilder', 'Naturlig Belysning', 'Historiefortelling', 'Social Media Ready']
     },
     { 
       icon: '🎉',
