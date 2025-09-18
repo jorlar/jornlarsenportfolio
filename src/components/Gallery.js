@@ -27,14 +27,13 @@ const Gallery = () => {
     { id: 6, src: '/images/gallery/portraits/portrait-3.jpg', category: 'portraits', alt: 'Portrettfotografering' },
     { id: 7, src: '/images/gallery/company/bedrift02.jpg', category: 'company', alt: 'Bedriftsbilder' },
     { id: 8, src: '/images/gallery/company/bedrift01.jpg', category: 'company', alt: 'Bedriftsbilder' },
-    { id: 9, src: '/images/gallery/events/honningbarna03.jpeg', category: 'events', alt: 'Eventfotografering' },
-    { id: 10, src: '/images/gallery/product/produkt01.jpg', category: 'products', alt: 'Produktbilder' },
-    { id: 11, src: '/images/gallery/product/produkt05.jpg', category: 'products', alt: 'Produktbilder' },
-    { id: 12, src: '/images/gallery/events/honningbarna01.jpeg', category: 'events', alt: 'Eventfotografering' },
-    { id: 13, src: '/images/gallery/weddings/bryllup.jpg', category: 'weddings', alt: 'Bryllupsfotografering' },
-    { id: 14, src: '/images/gallery/events/bokassa.jpg', category: 'events', alt: 'Eventfotografering' },
-    { id: 15, src: '/images/gallery/product/Produkt04.png', category: 'products', alt: 'Produktbilder' },
-    { id: 16, src: '/images/gallery/events/staut.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 9, src: '/images/gallery/product/produkt01.jpg', category: 'products', alt: 'Produktbilder' },
+    { id: 10, src: '/images/gallery/product/produkt05.jpg', category: 'products', alt: 'Produktbilder' },
+    { id: 11, src: '/images/gallery/events/honningbarna01.jpeg', category: 'events', alt: 'Eventfotografering' },
+    { id: 12, src: '/images/gallery/weddings/bryllup.jpg', category: 'weddings', alt: 'Bryllupsfotografering' },
+    { id: 13, src: '/images/gallery/events/bokassa.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 14, src: '/images/gallery/product/Produkt04.png', category: 'products', alt: 'Produktbilder' },
+    { id: 15, src: '/images/gallery/events/staut.jpg', category: 'events', alt: 'Eventfotografering' },
 
   ];
 
