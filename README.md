@@ -32,9 +32,7 @@ A modern, responsive React-based portfolio website for photographers and content
 
 1. Clone or download the project files
 2. Navigate to the project directory:
-   ```bash
-   cd /Users/jornlarsen/Desktop/jornlarsenweb
-   ```
+   
 
 3. Install dependencies:
    ```bash
