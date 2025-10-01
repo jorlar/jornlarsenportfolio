@@ -34,6 +34,8 @@ const Gallery = () => {
     { id: 13, src: '/images/gallery/events/bokassa.jpg', category: 'events', alt: 'Eventfotografering' },
     { id: 14, src: '/images/gallery/product/Produkt04.png', category: 'products', alt: 'Produktbilder' },
     { id: 15, src: '/images/gallery/events/staut.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 16, src: '/images/gallery/product/produkt06.jpg', category: 'products', alt: 'Produktbilder' },
+    { id: 17, src: '/images/gallery/product/produkt07.jpg', category: 'products', alt: 'Produktbilder' },
 
   ];
 
