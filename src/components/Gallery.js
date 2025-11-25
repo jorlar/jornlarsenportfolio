@@ -19,12 +19,12 @@ const Gallery = () => {
   // Gallery images from local public folder
   const galleryImages = [
     
-    { id: 1, src: '/images/gallery/weddings/wedding-1.jpg', category: 'weddings', alt: 'Bryllupsfotografering' },
-    { id: 2, src: '/images/gallery/lifestyle/about-img.jpg', category: 'lifestyle', alt: 'Livsstilsfotografering' },
+    { id: 1, src: '/images/gallery/company/FK_senteret.jpg', category: 'company', alt: 'Bedriftsbilder' },
+    { id: 2, src: '/images/gallery/company/Strøndafjorden.jpg', category: 'company', alt: 'Bedriftsbilder' },
     { id: 3, src: '/images/gallery/events/Beatles.jpeg', category: 'events', alt: 'Eventfotografering' },
     { id: 4, src: '/images/gallery/product/produkt03.jpg', category: 'products', alt: 'Produktbilder' },
     { id: 5, src: '/images/gallery/lifestyle/lifestyle-2.jpg', category: 'lifestyle', alt: 'Livsstilsfotografering' },
-    { id: 6, src: '/images/gallery/portraits/portrait-3.jpg', category: 'portraits', alt: 'Portrettfotografering' },
+    { id: 6, src: '/images/gallery/portraits/max.jpg', category: 'portraits', alt: 'Portrettfotografering' },
     { id: 7, src: '/images/gallery/company/bedrift02.jpg', category: 'company', alt: 'Bedriftsbilder' },
     { id: 8, src: '/images/gallery/company/bedrift01.jpg', category: 'company', alt: 'Bedriftsbilder' },
     { id: 9, src: '/images/gallery/product/produkt01.jpg', category: 'products', alt: 'Produktbilder' },
@@ -39,6 +39,7 @@ const Gallery = () => {
     { id: 18, src: '/images/gallery/events/gunnslingers.jpg', category: 'events', alt: 'Eventfotografering' },
     { id: 19, src: '/images/gallery/events/Kjartan.jpg', category: 'events', alt: 'Eventfotografering' },
     { id: 20, src: '/images/gallery/events/septemberWhen.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 21, src: '/images/gallery/lifestyle/tømmermann_copy.jpg', category: 'lifestyle', alt: 'Livsstilsfotografering' },
   ];
 
   const filteredImages = selectedCategory === 'all' 
