@@ -36,7 +36,9 @@ const Gallery = () => {
     { id: 15, src: '/images/gallery/events/staut.jpg', category: 'events', alt: 'Eventfotografering' },
     { id: 16, src: '/images/gallery/product/produkt06.jpg', category: 'products', alt: 'Produktbilder' },
     { id: 17, src: '/images/gallery/product/produkt07.jpg', category: 'products', alt: 'Produktbilder' },
-
+    { id: 18, src: '/images/gallery/events/gunnslingers.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 19, src: '/images/gallery/events/Kjartan.jpg', category: 'events', alt: 'Eventfotografering' },
+    { id: 20, src: '/images/gallery/events/septemberWhen.jpg', category: 'events', alt: 'Eventfotografering' },
   ];
 
   const filteredImages = selectedCategory === 'all' 
